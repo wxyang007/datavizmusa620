@@ -3,7 +3,7 @@ title: "Interactive charts with altair and Observable"
 date: 2019-04-13
 published: true
 tags: [dataviz, altair, musa-620]
-excerpt: "Testing an altair interactive plot on jekyll."
+excerpt: "Testing altair and Observable interactive chats on Jekyll."
 custom-javascript-list:
   - https://cdn.jsdelivr.net/npm//vega@4
   - https://cdn.jsdelivr.net/npm//vega-lite@2.6.0
@@ -12,6 +12,9 @@ custom-css-list:
   - /assets/css/altair.css
 altair-charts:
   vis: "altair/measlesChart.json"
+observable-cells:
+  url: https://api.observablehq.com/@nickhand/embedding-altair-plots-in-observable.js
+  names: ["heatmap"]
 toc: true
 toc_sticky: true
 ---
@@ -32,20 +35,3 @@ alt.renderers.enable('notebook')
 <div class="fullwidth">
   <div id="heatmap"></div>
 </div>
-
-<script type="module">
-  import notebook from "https://api.observablehq.com/@nickhand/embedding-altair-plots-in-observable.js";
-
-  const renders = {
-    "heatmap": "#heatmap",
-  };
-
-  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@2?module";
-  for (let i in renders)
-    renders[i] = document.querySelector(renders[i]);
-
-  Runtime.load(notebook, (variable) => {
-    if (renders[variable.name])
-      return new Inspector(renders[variable.name]);
-  });
-</script>

@@ -1,0 +1,21 @@
+{% comment %}
+Load and render Observable cells
+{% endcomment %}
+
+<script type="module">
+  import notebook from "{{ page.observable-cells.url }}";
+
+  const renders = {}
+  {% for name in page.observable-cells.names %}
+    renders["{{ name }}"] = "#{{ name }}"
+  {% endfor %}
+
+  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@2?module";
+  for (let i in renders)
+    renders[i] = document.querySelector(renders[i]);
+
+  Runtime.load(notebook, (variable) => {
+    if (renders[variable.name])
+      return new Inspector(renders[variable.name]);
+  });
+</script>

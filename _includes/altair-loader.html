@@ -1,0 +1,12 @@
+{% comment %} 
+Load a JSON spec for vega-lite into the specified container using vegaEmbed
+{% endcomment %} 
+
+{% for chart in page.altair-charts %}
+<script type="text/javascript">
+  var spec = "{{ site.baseurl }}/{{ chart[1] }}";
+  vegaEmbed("#{{ chart[0] }}", spec)
+    .then(function(result) {})
+    .catch(console.error);
+</script>
+{% endfor %}
