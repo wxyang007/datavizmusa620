@@ -1,0 +1,11 @@
+{% comment %} Adds references to JavaScript and CSS files to a page. Takes
+page.custom-javascript-list variable and renders script tag for each item in it.
+Takes page.custom-css-list variable and renders link tag for each item in it. {%
+endcomment %} {% for chart in page.altair-charts %}
+<script type="text/javascript">
+  var spec = "/{{ chart[1] }}";
+  vegaEmbed("#{{ chart[0] }}", spec)
+    .then(function(result) {})
+    .catch(console.error);
+</script>
+{% endfor %}
