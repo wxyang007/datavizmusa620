@@ -46,6 +46,8 @@ Lastly, the measles incidence produced using the Holoviews package:
 
 <div id="holoviews-chart"></div>
 
-
 ### Note
-See the source code of this post When embedding charts, 
+
+See the [raw source code](https://raw.githubusercontent.com/nickhand/static-site-template/master/_posts/2019-04-13-measles-charts.md) of this post for details on how these charts were embedded.
+
+When embedding charts, you will likely need to adjust the width/height of the charts before embedding them in the page so they fit nicely when embedded.
