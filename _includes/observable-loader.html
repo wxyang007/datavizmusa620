@@ -1,13 +1,11 @@
-{% comment %}
-Load and render Observable cells
-{% endcomment %}
+{% comment %} Load and render Observable cells {% endcomment %}
 
 <script type="module">
-  import notebook from "{{ page.observable-cells.url }}";
+  import notebook from "{{ page.observable-loader.url }}";
 
   const renders = {}
-  {% for name in page.observable-cells.names %}
-    renders["{{ name }}"] = "#{{ name }}"
+  {% for name in page.observable-loader.names %}
+    renders["{{ name[1] }}"] = "#{{ name[0] }}"
   {% endfor %}
 
   import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@2?module";

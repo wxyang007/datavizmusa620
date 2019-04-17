@@ -4,17 +4,14 @@ date: 2019-04-13
 published: true
 tags: [dataviz, altair, musa-620]
 excerpt: "Testing altair and Observable interactive chats on Jekyll."
-custom-javascript-list:
-  - https://cdn.jsdelivr.net/npm//vega@4
-  - https://cdn.jsdelivr.net/npm//vega-lite@2.6.0
-  - https://cdn.jsdelivr.net/npm//vega-embed@3
-custom-css-list:
-  - /assets/css/altair.css
-altair-charts:
-  vis: "altair/measlesChart.json"
-observable-cells:
+altair-loader:
+  altair-chart: "charts/measlesAltair.json"
+observable-loader:
   url: https://api.observablehq.com/@nickhand/embedding-altair-plots-in-observable.js
-  names: ["heatmap"]
+  names:
+    vega-chart: "heatmap"
+html-loader:
+  holoviews-chart: "charts/measlesHoloviews.html"
 toc: true
 toc_sticky: true
 ---
@@ -28,10 +25,14 @@ import altair as alt
 alt.renderers.enable('notebook')
 ```
 
-<div id="vis"></div>
+<div id="altair-chart"></div>
 
 ## Observable Example
 
 <div class="fullwidth">
-  <div id="heatmap"></div>
+  <div id="vega-chart"></div>
 </div>
+
+## Holoviews Example
+
+<div id="holoviews-chart"></div>
