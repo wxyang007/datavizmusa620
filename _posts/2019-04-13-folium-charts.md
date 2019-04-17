@@ -20,3 +20,5 @@ This post will show examples of embedding interactive maps produced using [Foliu
 ## Percentage of Households without Internet
 
 <div id="folium-chart-2"></div>
+
+See the [week 10 lecture slides](https://github.com/MUSA-620-Spring-2019/week-10/blob/master/lecture-10.ipynb) for the code that produced these plots.
