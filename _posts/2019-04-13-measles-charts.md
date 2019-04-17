@@ -10,7 +10,7 @@ observable-loader:
   url: https://api.observablehq.com/@nickhand/embedding-altair-plots-in-observable.js
   names:
     vega-chart: "heatmap"
-html-loader:
+hv-loader:
   holoviews-chart: "charts/measlesHoloviews.html"
 toc: true
 toc_sticky: true
