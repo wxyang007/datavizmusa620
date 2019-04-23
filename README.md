@@ -1,6 +1,6 @@
 # data-viz-template
 
-A template for setting up a Jekyll-powered blog with Github Pages. 
+A template for including data visualizations in a Jekyll-powered blog with Github Pages.
 
 
 ## Steps
