@@ -18,13 +18,11 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale: "en-US"
 title: "MUSA 620: Data Wrangling and Data Visualization"
 title_separator: "-"
-name: "Wenxin Yang"
-description: "Displaying data visualizations I created for course MUSA 620"
-url: "https://wxyang007.github.io"
-baseurl: "/datavizmusa620"
-# the subpath of your site, e.g. "/blog"
-repository: "wxyang007/datavizmusa620"
-# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+name: "Nick Hand"
+description: "Displaying cool data visualizations"
+url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl: # the subpath of your site, e.g. "/blog"
+repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
@@ -107,18 +105,18 @@ analytics:
 
 # Site Author
 author:
-  name: "Wenxin Yang"
+  name: "Nick Hand"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Master candidate at PennDesign, Urban Spatial Analytics"
+  bio: "Director of Finance, Data, and Policy, Philadelphia Controller"
   location: "Philadelphia"
-  email: "wxyang.wenxin@gmail.com"
+  email:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://wxyang007.github.io"
+      # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
