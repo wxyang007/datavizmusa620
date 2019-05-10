@@ -18,8 +18,8 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale: "en-US"
 title: "MUSA 620: Data Wrangling and Data Visualization"
 title_separator: "-"
-name: "Nick Hand"
-description: "Displaying cool data visualizations"
+name: "Wenxin Yang"
+description: "Displaying data visualizations I created for course MUSA 620"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -105,18 +105,18 @@ analytics:
 
 # Site Author
 author:
-  name: "Nick Hand"
+  name: "Wenxin Yang"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Director of Finance, Data, and Policy, Philadelphia Controller"
+  bio: "Master candidate at PennDesign, Urban Spatial Analytics"
   location: "Philadelphia"
-  email:
+  email: wxyang.wenxin@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "wxyang007.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
